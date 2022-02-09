@@ -43,6 +43,7 @@ config.middleware.use(Rack::LiveReload,
   min_delay        : 500,    # default 1000
   max_delay        : 10_000, # default 60_000
   live_reload_port : 56789,  # default 35729
+  live_reload_scheme : 'ws', # default ws, use wss for ssl
   host             : 'myhost.cool.wow',
   ignore           : [ %r{dont/modify\.html$} ]
 )

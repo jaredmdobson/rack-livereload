@@ -37,7 +37,7 @@ describe Rack::LiveReload::BodyProcessor do
   describe "livereload local uri" do
     context 'does not exist' do
       before do
-        stub_request(:any, 'localhost:35729/livereload.min.js').to_timeout
+        stub_request(:any, 'localhost:35729/livereload.js').to_timeout
       end
 
       it { should use_vendored }
@@ -45,7 +45,7 @@ describe Rack::LiveReload::BodyProcessor do
 
     context 'exists' do
       before do
-        stub_request(:any, 'localhost:35729/livereload.min.js')
+        stub_request(:any, 'localhost:35729/livereload.js')
       end
 
       it { should_not use_vendored }
@@ -56,7 +56,7 @@ describe Rack::LiveReload::BodyProcessor do
 
       context 'exists' do
         before do
-          stub_request(:any, 'localhost:12348/livereload.min.js')
+          stub_request(:any, 'localhost:12348/livereload.js')
         end
         it { should_not use_vendored }
       end

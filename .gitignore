@@ -6,3 +6,4 @@ gemfiles/*.lock
 pkg/*
 *.orig
 tmp/
+.idea

@@ -10,6 +10,7 @@
 <% end %>
 <script type="text/javascript">
   RACK_LIVERELOAD_PORT = <%= @options[:live_reload_port] %>;
+  RACK_LIVERELOAD_SCHEME = "<%= @options[:live_reload_scheme] %>";
 </script>
 <script type="text/javascript" src="<%= livereload_source %>"></script>
 

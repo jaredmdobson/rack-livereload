@@ -14,7 +14,7 @@ describe Rack::LiveReload do
   let(:env) { {} }
   let(:options) { {} }
 
-  context '/__rack/livereload.min.js' do
+  context '/__rack/livereload.js' do
     let(:env) { { 'PATH_INFO' => described_class::BodyProcessor::LIVERELOAD_JS_PATH } }
 
     before do
