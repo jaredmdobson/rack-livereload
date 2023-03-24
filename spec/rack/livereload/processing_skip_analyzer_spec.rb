@@ -40,7 +40,7 @@ describe Rack::LiveReload::ProcessingSkipAnalyzer do
     end
 
     context 'chunked response' do
-      let(:headers) { { 'Transfer-Encoding' => 'chunked' } }
+      let(:headers) { { 'transfer-encoding' => 'chunked' } }
 
       it { should be_chunked }
     end
@@ -48,7 +48,7 @@ describe Rack::LiveReload::ProcessingSkipAnalyzer do
 
   describe '#inline?' do
     context 'inline disposition' do
-      let(:headers) { { 'Content-Disposition' => 'inline; filename=my_inlined_file' } }
+      let(:headers) { { 'content-disposition' => 'inline; filename=my_inlined_file' } }
 
       it { should be_inline }
     end
@@ -90,19 +90,19 @@ describe Rack::LiveReload::ProcessingSkipAnalyzer do
 
   describe '#html?' do
     context 'HTML content' do
-      let(:headers) { { 'Content-Type' => 'text/html' } }
+      let(:headers) { { 'content-type' => 'text/html' } }
 
       it { should be_html }
     end
 
     context 'XHTML content' do
-      let(:headers) { { 'Content-Type' => 'application/xhtml+xml' } }
+      let(:headers) { { 'content-type' => 'application/xhtml+xml' } }
 
       it { should be_html }
     end
 
     context 'PDF content' do
-      let(:headers) { { 'Content-Type' => 'application/pdf' } }
+      let(:headers) { { 'content-type' => 'application/pdf' } }
 
       it { should_not be_html }
     end
