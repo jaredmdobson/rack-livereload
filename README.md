@@ -1,3 +1,6 @@
+** LOOKING FOR MAINTAINER **  Please contact me if interested.
+
+
 # Rack::LiveReload [![Build Status](https://travis-ci.org/onesupercoder/rack-livereload.svg?branch=master)](https://travis-ci.org/onesupercoder/rack-livereload) [![Maintainability](https://api.codeclimate.com/v1/badges/6b3cafaf0d8752d0ac55/maintainability)](https://codeclimate.com/github/onesupercoder/rack-livereload/maintainability)
 
 Hey, you've got [LiveReload](http://livereload.com/) in my [Rack](http://rack.rubyforge.org/)!
