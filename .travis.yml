@@ -13,3 +13,5 @@ matrix:
       gemfile: gemfiles/rails51.gemfile
     - rvm: 2.7.1
       gemfile: gemfiles/rails602.gemfile
+    - rvm: 3.2.2
+      gemfile: gemfiles/rails7.gemfile
