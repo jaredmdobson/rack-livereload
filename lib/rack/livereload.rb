@@ -27,10 +27,10 @@ module Rack
         processor = BodyProcessor.new(body, @options)
         processor.process!(env)
 
-        headers['content-length'] = processor.content_length.to_s
+        headers['Content-Length'] = processor.content_length.to_s
 
         if processor.livereload_added
-          headers['x-rack-livereload'] = '1'
+          headers['X-Rack-LiveReload'] = '1'
         end
 
         [ status, headers, processor.new_body ]
@@ -46,7 +46,7 @@ module Rack
                'application/swf'
              end
 
-      [ 200, { 'content-type' => type, 'content-length' => ::File.size(file).to_s }, [ ::File.read(file) ] ]
+      [ 200, { 'Content-Type' => type, 'Content-Length' => ::File.size(file).to_s }, [ ::File.read(file) ] ]
     end
   end
 end
