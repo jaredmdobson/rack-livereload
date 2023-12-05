@@ -105,3 +105,7 @@ use Rack::LiveReload, no_swf: true
 Once more browsers support WebSockets than don't, this option will be reversed and you'll have
 to explicitly include the Flash shim.
 
+### Rack support
+
+- Rack 2 is supported until version `0.5.x` and is maintained in the `rack2` branch
+- Rack 3 is supported in version `0.6.0` and later
