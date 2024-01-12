@@ -20,11 +20,11 @@ module Rack
       end
 
       def chunked?
-        @headers['transfer-encoding'] == 'chunked'
+        @headers['Transfer-Encoding'] == 'chunked'
       end
 
       def inline?
-        @headers['content-disposition'] =~ %r{^inline}
+        @headers['Content-Disposition'] =~ %r{^inline}
       end
 
       def ignored?
@@ -37,7 +37,7 @@ module Rack
       end
 
       def html?
-        @headers['content-type'] =~ %r{text/html|application/xhtml\+xml}
+        @headers['Content-Type'] =~ %r{text/html|application/xhtml\+xml}
       end
 
       def get?
