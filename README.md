@@ -1,5 +1,7 @@
 ** LOOKING FOR MAINTAINER **  Please contact me if interested.
 
+I recommend https://github.com/kirillplatonov/hotwire-livereload instead.
+
 
 # Rack::LiveReload [![Build Status](https://travis-ci.org/onesupercoder/rack-livereload.svg?branch=master)](https://travis-ci.org/onesupercoder/rack-livereload) [![Maintainability](https://api.codeclimate.com/v1/badges/6b3cafaf0d8752d0ac55/maintainability)](https://codeclimate.com/github/onesupercoder/rack-livereload/maintainability)
 
