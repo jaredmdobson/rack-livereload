@@ -25,7 +25,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "httparty"
   s.add_development_dependency "sinatra"
   s.add_development_dependency "shotgun"
-  s.add_development_dependency "thin"
   s.add_development_dependency "rake"
   s.add_development_dependency "mocha"
   s.add_development_dependency "guard"
@@ -36,6 +35,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "webmock"
   s.add_development_dependency "nokogiri", ("< 1.6" if RUBY_VERSION < "1.9") # Nokogiri >= 1.6 requires Ruby >= 1.9
   s.add_development_dependency 'appraisal', '~> 2.2.0'
-  s.add_runtime_dependency "rack", "~> 3.0.8"
+  s.add_runtime_dependency "rack", ">= 3.0", "< 3.2"
 end
 
